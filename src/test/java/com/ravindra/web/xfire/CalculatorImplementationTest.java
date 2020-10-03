@@ -29,7 +29,7 @@ public class CalculatorImplementationTest {
 		request.setInput1(101.0);
 		request.setInput2(99.0);
 		Response response = impl.calculate(request);
-		assertEquals(200.0, response.getRestult(), 0.0);
+		assertEquals(200.0, response.getResult(), 0.0);
 		
 	}
 	
@@ -39,7 +39,7 @@ public class CalculatorImplementationTest {
 		request.setInput1(101.0);
 		request.setInput2(99.0);
 		Response response = impl.calculate(request);
-		assertEquals(2.0, response.getRestult(), 0.0);
+		assertEquals(2.0, response.getResult(), 0.0);
 		
 	}
 	
@@ -49,7 +49,7 @@ public class CalculatorImplementationTest {
 		request.setInput1(1.1);
 		request.setInput2(2.2);
 		Response response = impl.calculate(request);
-		assertEquals(2.42, response.getRestult(), 0.001);
+		assertEquals(2.42, response.getResult(), 0.001);
 		
 	}
 	
@@ -59,7 +59,7 @@ public class CalculatorImplementationTest {
 		request.setInput1(2.2);
 		request.setInput2(1.1);
 		Response response = impl.calculate(request);
-		assertEquals(2.0, response.getRestult(), 0.0);
+		assertEquals(2.0, response.getResult(), 0.0);
 		
 	}
 

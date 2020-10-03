@@ -38,7 +38,7 @@ public class CalculatorImplementation implements CalculatorInterface {
 			response.setSuccess(false);
 			response.setErrorMessage("Action is a required filed");
 		}
-		response.setRestult(result);
+		response.setResult(result);
 		return response;
 	}
 
