@@ -33,10 +33,10 @@
 						<phase>generate-sources</phase>
 						<configuration>
 							<tasks>
-								<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="maven.test.classpath" />
-								<mkdir dir="${project.build.directory}/generated-source" />
+								<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="maven.test.classpath"/>
+								<mkdir dir="${project.build.directory}/generated-source"/>
 								<xjc target="${project.build.directory}/generated-source">
-									<schema dir="${basedir}/src/main/webapp/WEB-INF/classes/META-INF/xfire/" includes="*.xsd" />
+									<schema dir="${basedir}/src/main/webapp/WEB-INF/classes/META-INF/xfire/" includes="*.xsd"/>
 								</xjc>
 							</tasks>
 							<sourceRoot>${project.build.directory}/generated-source</sourceRoot>
@@ -53,7 +53,7 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
-			<version>2.3</version>
+			<version>2.5</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
